@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['glacial-citadel-05335-2df026b89a08.herokuapp.com/', '127.0.0.1:8000/', 'www.hodlok.co.uk', 'hodlok.co.uk']
+ALLOWED_HOSTS = ['hodlok-c23f29fe555e.herokuapp.com', '127.0.0.1:8000', 'www.hodlok.co.uk', 'hodlok.co.uk']
 
 
 # Application definition
