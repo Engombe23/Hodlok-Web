@@ -4,7 +4,7 @@ from django.contrib.sitemaps.views import sitemap
 from .sitemaps import ContactSitemap
 
 sitemaps = {
-  'contacts':ContactSitemap
+  'list-contacts':ContactSitemap
 }
 
 urlpatterns = [
