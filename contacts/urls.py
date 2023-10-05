@@ -1,10 +1,10 @@
 from django.urls import path
 from contacts import views
 from django.contrib.sitemaps.views import sitemap
-from .sitemaps import ContactSitemap
+from .sitemaps import StaticViewSitemap
 
 sitemaps = {
-  'list-contacts':ContactSitemap
+  'static':StaticViewSitemap
 }
 
 urlpatterns = [

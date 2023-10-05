@@ -1,7 +1,7 @@
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 
-class ContactSitemap(Sitemap):
+class StaticViewSitemap(Sitemap):
   changefreq = "monthly"
   priority = 0.8
   protocol = 'https'
