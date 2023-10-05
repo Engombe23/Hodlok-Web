@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Contact Us - HODLOK</title>
+    <meta name="description" content="Contact us to explore our wide range of digital services!">
+  </head>
+
+  <body>
+    <h1>Contact Us</h1>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-hodlok">
+            <form action="https://sheetdb.io/api/v1/yrtpheik0zocv" method="POST" id="contact-form">
+              <label for="Name"></label>
+              <input type="text" name="data[Name]" id="Name" placeholder="Company Name" required>
+              
+              <label for="Email"></label>
+              <input type="email" name="data[Email]" id="Email" placeholder="Company Email" required>
+              
+              <label for="Phone Number"></label>
+              <input type="tel" name="data[Phone Number]" id="Phone Number" placeholder="Phone Number" required>
+              
+              <input type="hidden" name="_captcha" value="false">
+              
+              <label for="Services Needed"></label>
+              <textarea name="data[Services Needed]" id="Services Needed" rows="6" placeholder="What services are you looking for?" required></textarea>
+  
+              <button type="submit" class="btn btn2">Contact Us</button>
+            </form>
+          </div>
+          <!--Quote section-->
+          <div class="text-center my-5">
+            <h2>We can give you a quote within 60 minutes!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+</html>
+
+<script>
+  var form = document.getElementById('contact-form');
+  form.addEventListener("submit", e => {
+  e.preventDefault();
+  fetch(form.action, {
+    method : "POST",
+    body: new FormData(document.getElementById("contact-form")),
+  }).then(
+    response => response.json()
+  ).then((html) => {
+  // you can put any JS code here
+  window.location.href = "{% url 'thankyou' %}";
+
+  });
+});
+</script>
+{% endblock %}

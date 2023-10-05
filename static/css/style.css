@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---Nav/Header----*/
+
+nav ul li a {
+  font-size: 18px;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(218, 165, 32, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler {
+  border: 1px solid rgba(218, 165, 32, 0.5);
+}
+
+.navbar {
+  background-color: #000;
+}
+
+/*---Main Content Style On All Web Pages----*/
+
+body {
+  font-family: 'Montserrat', 'sans-serif';
+  color: #FFD700;
+  position: relative;
+}
+
+main{
+  min-height: 150vh;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 125px;
+  padding: 30px 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: transparent;
+  position: relative;
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 40px;
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  -webkit-background-clip: text;
+}
+
+#buttonId {
+  border-radius: 5px;
+  background: linear-gradient(#a95, #fea);
+  
+}
+
+.consultation button {
+  margin-bottom: 50px;
+}
+
+h5 {
+  text-align: center;
+}
+
+.about p, .services-header p {
+  font-size: 25px;
+}
+
+/*---Footer----*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+}
+
+footer div p small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-col {
+  width: 50%;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col p {
+  text-align: center;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+
+.footer-col ul li a:hover {
+  padding-left: 8px;
+}
+
+.footer-col a {
+  color: #FFD700;
+}
+
+
+.footer-col a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.contact-us-title a, small a {
+  color: #FFD700;
+}
+
+.line {
+  width: 100%;
+  height: 7px;
+  border: 0 none;
+  background-color: white;
+}
+
+/*---Contact----*/
+
+.contact-hodlok {
+  flex-basis: 60%;
+}
+
+.contact-hodlok form {
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #ffd700;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.contact-right h2, p.address {
+  margin-left: 50px;
+}

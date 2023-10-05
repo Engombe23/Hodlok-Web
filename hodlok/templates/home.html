@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!--Title-->
+    <title>HODLOK - A Digital Marketing Agency</title>
+    <!--Meta Description for Home Page-->
+    <meta name="description" content="Hodlok is a business service provider which aims to aid you in your business pursuits through digital marketing, as well as a multitude of other services.">
+  </head>
+
+  <body>
+    <!--Header-->
+    <header class="py-5">
+      <div class="container px-5 pb-3">
+        <div class="row gx-5 align-items-center">
+          <div class="col-xxl-5">
+            <!--Header text content-->
+            <div class="text-center">
+              <h1>Unlocking the pathway to your business dreams</h1>
+              <h2>If you need it, we'll do it!</h2>
+              <div class="text-center mb-3 mt-3">
+                <a href="{% url 'contacts' %}"><button type="button" class="btn btn2" id="buttonId">Schedule your free consultation</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <hr class="line">
+    <!--Services-->
+    <section class="py-5">
+      <div class="container px-5 mb-3">
+        <div class="text-center mb-5">
+          <h1>Our Services</h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+          {% for s in services %}
+          <div class="col-md-6 mb-5">
+            <div class="card bg-dark bg-gradient h-100">
+              <img class="card-img-top" src="{{ s.image.url }}" style="width: 100%">
+              <div class="card-body">
+                <h5 class="card-title">{{ s.title }}</h5>
+                <p class="card-text">{{ s.description }}</p>
+                <ul>
+                  <li>{{ s.activity }}</li>
+                  <li>{{ s.other_activity }}</li>
+                </ul>
+                <div class="text-center">
+                  <a href="{{ s.link }}"><button type="button" class="btn btn2" id="buttonId">Learn More</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <hr class="line">
+    <!--About Section-->
+    <section class="about">
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="text-center my-5">
+            <h1>About Us</h1>
+            <p>Hodlok is a business service provider which aims to aid you in your business pursuits through digital marketing, as well as a multitude of other services.</p>
+            <p>Outsourcing to us will save you invaluable time, which will allow you to fully focus on the ever changing business climate to gain the edge over your competitors.</p>
+            <p>We promise an excellent line of communication as well as an excellent service!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="line">
+    <!--Persuade Section-->
+    <section>
+      <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+          <div class="text-center my-5">
+            <h1>Want to get more leads, increase sales and have world-class marketing?</h1>
+            <div class="consultation">
+              <a href="{% url 'contacts' %}"><button type="button" class="btn btn2" id="buttonId">Schedule your free consultation here</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+</html>
+
+{% endblock %}

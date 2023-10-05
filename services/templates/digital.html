@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_content %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Our Digital Services - HODLOK</title>
+        <meta name="description" content="We offer quality digital services that will expand your business to new heights and levels. Want to improve and generate more leads from your existing digital presence? Reach out to us.">
+    </head>
+
+    <body>
+        <!--Digital Services-->
+        <section>
+            <h1>Our Digital Services</h1>
+            <div class="container">
+                <div class="row">
+                    {% for digital_service in digital_services %}
+                    <div class="col-md-6 mb-5">
+                        <div class="card bg-dark bg-gradient h-100">
+                            <img class="card-img-top" src="{{ digital_service.image.url }}" style="width: 100%" alt="{{ digital_service.title }}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ digital_service.title }}</h5>
+                                <p class="card-text">{{ digital_service.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        <hr class="line">
+        <!--Persuade Section-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="text-center my-3">
+                        <h1>Want to improve and generate more leads from your existing digital presence?</h1>
+                        <div class="consultation">
+                            <a href="{% url 'contacts' %}"><button type="button" class="btn btn2" id="buttonId">Schedule your free consultation here</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>    
+    </body>
+
+</html>
+
+{% endblock %}
