@@ -11,14 +11,3 @@ class DigitalServiceSitemap(Sitemap):
   
   def location(self):
     return 'services/digital'
-
-class MarketingServiceSitemap(Sitemap):
-  changefreq = "weekly"
-  priority = 0.8
-  protocol = 'https'
-
-  def items(self):
-    return MarketingService.objects.all()
-  
-  def location(self):
-    return 'services/marketing'

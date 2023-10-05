@@ -1,11 +1,10 @@
 from django.urls import path
 from services import views
 from django.contrib.sitemaps.views import sitemap
-from .sitemaps import DigitalServiceSitemap, MarketingServiceSitemap
+from .sitemaps import DigitalServiceSitemap
 
 sitemaps = {
-  'services': DigitalServiceSitemap,
-  'services': MarketingServiceSitemap
+  'services': DigitalServiceSitemap
 }
 
 urlpatterns = [
