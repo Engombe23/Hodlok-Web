@@ -13,5 +13,5 @@ urlpatterns = [
     path("", views.hodlok_services, name='services'),
     path("digital/", views.digital_services, name='digital'),
     path("marketing/", views.marketing_services, name='marketing'),
-    path('sitemap.xml', sitemap, {'sitemaps': sitemap}, name='django.contrib.sitemaps.views.sitemap'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
 ]
