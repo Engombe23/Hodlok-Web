@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'hodlok.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "d45cf597srchhc",
+        "USER": "itnvjbxehmzovy",
+        "PASSWORD": "ff6e2743054e2eeb10a967cc541e672b1822eb67236f70f1c98600f45429fdc3",
+        "HOST": "ec2-44-215-1-253.compute-1.amazonaws.com",
+        "PORT": "5432",
     }
 }
 
