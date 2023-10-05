@@ -3,10 +3,8 @@ from services import views
 from django.contrib.sitemaps.views import sitemap
 from .sitemaps import DigitalServiceSitemap
 
-app_name = "services"
-
 sitemaps = {
-  'services': DigitalServiceSitemap
+  'service': DigitalServiceSitemap
 }
 
 urlpatterns = [
