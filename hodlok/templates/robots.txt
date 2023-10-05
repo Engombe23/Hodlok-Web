@@ -1,0 +1,4 @@
+User-Agent: Googlebot
+Disallow: 
+
+Sitemap: https://hodlok.co.uk/sitemap.xml
