@@ -7,7 +7,7 @@ class ContactSitemap(Sitemap):
   protocol = 'https'
 
   def items(self):
-    return 'contacts'
+    return ['contacts']
   
   def location(self, item):
     return reverse(item)
