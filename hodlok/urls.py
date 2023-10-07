@@ -20,6 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("django-check-seo/", include("django_check_seo.urls")),
     path('', include('home.urls')),
     path('services/', include('services.urls')),
     path('contacts/', include('contacts.urls')),

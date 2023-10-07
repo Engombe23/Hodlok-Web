@@ -8,7 +8,7 @@
   <head>
     <!--Title-->
     <title>HODLOK - A Digital Marketing Agency</title>
-    <!--Meta Description for Home Page-->
+    <meta name="keywords" content="hodlok, digital, marketing, services, business">
     <meta name="description" content="Hodlok is a business service provider which aims to aid you in your business pursuits through digital marketing, as well as a multitude of other services.">
   </head>
 
@@ -35,13 +35,13 @@
     <section class="py-5">
       <div class="container px-5 mb-3">
         <div class="text-center mb-5">
-          <h1>Our Services</h1>
+          <h2>Our Services</h2>
         </div>
         <div class="row gx-5 justify-content-center">
           {% for s in services %}
           <div class="col-md-6 mb-5">
             <div class="card bg-dark bg-gradient h-100">
-              <img class="card-img-top" src="{{ s.image.url }}" style="width: 100%">
+              <img class="card-img-top" src="{{ s.image.url }}" style="width: 100%" alt="Image of a {{ s.title }} service">
               <div class="card-body">
                 <h5 class="card-title">{{ s.title }}</h5>
                 <p class="card-text">{{ s.description }}</p>
@@ -65,7 +65,7 @@
       <div class="container px-5">
         <div class="row gx-5 justify-content-center">
           <div class="text-center my-5">
-            <h1>About Us</h1>
+            <h2>About Us</h2>
             <p>Hodlok is a business service provider which aims to aid you in your business pursuits through digital marketing, as well as a multitude of other services.</p>
             <p>Outsourcing to us will save you invaluable time, which will allow you to fully focus on the ever changing business climate to gain the edge over your competitors.</p>
             <p>We promise an excellent line of communication as well as an excellent service!</p>
@@ -79,7 +79,7 @@
       <div class="container px-5">
         <div class="row gx-5 justify-content-center">
           <div class="text-center my-5">
-            <h1>Want to get more leads, increase sales and have world-class marketing?</h1>
+            <h2>Want to get more leads, increase sales and have world-class marketing?</h2>
             <div class="consultation">
               <a href="{% url 'contacts' %}"><button type="button" class="btn btn2" id="buttonId">Schedule your free consultation here</button></a>
             </div>

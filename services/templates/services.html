@@ -8,7 +8,8 @@
 
   <head>
     <title>Services We Offer - HODLOK</title>
-    <meta name="description" content="We build more than just our services, we build life-long relationships with your business and your clients. Check out below the digital and marketing services we offer.">
+    <meta name="keywords" content="marketing, services, digital">
+    <meta name="description" content="We build more than just our services, we build life-long relationships with your business and your clients. Check out our digital and marketing services.">
   </head>
 
   <body>
@@ -25,7 +26,7 @@
           {% for s in services %}
           <div class="col-md-6 mb-5">
             <div class="card bg-dark bg-gradient h-100">
-              <img class="card-img-top" src="{{ s.image.url }}" style="width: 100%">
+              <img class="card-img-top" src="{{ s.image.url }}" style="width: 100%" alt="Image of a {{ s.title }} service">
               <div class="card-body">
                 <h5 class="card-title">{{ s.title }}</h5>
                 <p class="card-text">{{ s.description }}</p>
@@ -49,7 +50,7 @@
       <div class="container px-5">
         <div class="row gx-5 justify-content-center">
           <div class="text-center mt-3">
-            <h1>Are these the services you need to transform your business?</h1>
+            <h2>Are these the services you need to transform your business?</h2>
             <div class="consultation">
               <a href="{% url 'contacts' %}"><button type="button" class="btn btn2" id="buttonId">Schedule your free consultation here</button></a>
             </div>
